@@ -1,42 +1,43 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package constraint_puzzle;
-import java.util.List;
+
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * A collection of puzzles.
- * 
- * @author rm108s04
  */
-public class ConstraintPuzzleCollection {
-    public ConstraintPuzzleCollection(String n, Class pc, Ruleset rs) {
+public class ConstraintPuzzleCollection
+{
+    public ConstraintPuzzleCollection(String n, Class pc, Ruleset rs)
+    {
         name = n;
         puzzleClass = pc;
         ruleset = rs;
-        puzzles = new LinkedList<ConstraintPuzzle>();     
+        puzzles = new LinkedList<ConstraintPuzzle>();
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public Class getPuzzleClass() {
+    public Class getPuzzleClass()
+    {
         return puzzleClass;
     }
 
-    public Ruleset getRuleset() {
+    public Ruleset getRuleset()
+    {
         return ruleset;
     }
 
-    public void addPuzzle(ConstraintPuzzle puzzle) {
+    public void addPuzzle(ConstraintPuzzle puzzle)
+    {
         puzzles.add(puzzle);
     }
 
-    public List<ConstraintPuzzle> getPuzzles() {
+    public List<ConstraintPuzzle> getPuzzles()
+    {
         return puzzles;
     }
 

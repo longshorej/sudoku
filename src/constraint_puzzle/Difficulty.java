@@ -2,39 +2,36 @@ package constraint_puzzle;
 
 /**
  * A difficulty-constants class.
- * 
+ *
  * Usage: Difficulty.EASY, etc...
  */
 public class Difficulty
 {
-    protected Difficulty() { } // Block
+    protected Difficulty()
+    {
+    } // Block
 
-    public static String getText(int d) {
+    public static String getText(int d)
+    {
 
         // Someone could make this a map...
-        if(d == SOLVED) {
+        if (d == SOLVED) {
             return "Solved";
-        }
-        else if(d == EASY) {
+        } else if (d == EASY) {
             return "Easy";
-        }
-        else if(d == MEDIUM) {
+        } else if (d == MEDIUM) {
             return "Medium";
-        }
-        else if(d == HARD) {
+        } else if (d == HARD) {
             return "Hard";
-        }
-        else if(d == REQUIRES_GUESSING) {
+        } else if (d == REQUIRES_GUESSING) {
             return "Solvable By Guessing";
-        }
-        else if(d == UNSOLVABLE) {
+        } else if (d == UNSOLVABLE) {
             return "Unsolvable";
-        }
-        else {
+        } else {
             return "Unknown";
         }
     }
-    
+
     public static final int SOLVED = 0;
     public static final int EASY = 1;
     public static final int MEDIUM = 2;

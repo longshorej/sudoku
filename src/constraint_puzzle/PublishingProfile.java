@@ -1,21 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package constraint_puzzle;
+
 import java.awt.Color;
 
 /**
- * This is an interface class and is meant to be implemented by publishing format
- * @author mat
+ * This is an interface class and is meant to be implemented by publishing
+ * format
  */
 public class PublishingProfile
 {
     /**
-     * Data structure for the visual aspect of
-     * rendering a puzzle.
-     * 
+     * Data structure for the visual aspect of rendering a puzzle.
+     *
      * @param name the name of the profile
      * @param fontsize the Font size.
      * @param bmin the Boarder min value.
@@ -35,11 +30,13 @@ public class PublishingProfile
         smallBoarderColor = smallbrcol;
     }
 
-    public PublishingProfile(String name) {
+    public PublishingProfile(String name)
+    {
         this(name, 0, 0, 0, 0, new Color(0), new Color(0), new Color(0));
     }
 
-    public void setFontSize(double v) {
+    public void setFontSize(double v)
+    {
         fontSize = v;
     }
 
@@ -48,9 +45,11 @@ public class PublishingProfile
         return fontSize;
     }
 
-    public void setBoarderMin(float v) {
+    public void setBoarderMin(float v)
+    {
         boarderMin = v;
     }
+
     public float getBoarderMin()
     {
         return boarderMin;
@@ -71,7 +70,8 @@ public class PublishingProfile
         return cellSize;
     }
 
-    public void setcellSize(int v) {
+    public void setcellSize(int v)
+    {
         cellSize = v;
     }
 
@@ -80,15 +80,18 @@ public class PublishingProfile
         return boarderColor;
     }
 
-    public void setBoarderColor(Color c) {
+    public void setBoarderColor(Color c)
+    {
         boarderColor = c;
     }
 
-    public Color getSmallBoarderColor() {
+    public Color getSmallBoarderColor()
+    {
         return this.smallBoarderColor;
     }
 
-    public void setSmallBoarderColor(Color c) {
+    public void setSmallBoarderColor(Color c)
+    {
         smallBoarderColor = c;
     }
 
@@ -97,7 +100,8 @@ public class PublishingProfile
         return textColor;
     }
 
-    public void setTextColor(Color c) {
+    public void setTextColor(Color c)
+    {
         textColor = c;
     }
 
@@ -113,7 +117,5 @@ public class PublishingProfile
     private Color boarderColor;
     private Color smallBoarderColor;
     private Color textColor;
-
-
     public String publisherName; //This is the publisher name
 }

@@ -5,41 +5,52 @@ import org.sourceforge.jlibeps.epsgraphics.EpsGraphics2D;
 
 /**
  * EPS-specific graphics2D code.
- *
  */
 public class EPSGraphics2DFilePublisher extends Graphics2DFilePublisher
 {
-    public EPSGraphics2DFilePublisher() {
+    public EPSGraphics2DFilePublisher()
+    {
         graphics2D = new EpsGraphics2D();
     }
-    
-    @Override public void finalize() {
-        if(graphics2D != null) {
+
+    @Override
+    public void finalize()
+    {
+        if (graphics2D != null) {
             graphics2D.dispose();
         }
     }
 
-    @Override public byte[] getByteRepresentation() {
+    @Override
+    public byte[] getByteRepresentation()
+    {
         byte[] byteArray = graphics2D.toString().getBytes();
         reset();
         return byteArray;
     }
 
-    @Override public String getFormatName() {
+    @Override
+    public String getFormatName()
+    {
         return "EPS";
     }
 
-    @Override public String getExtensionName() {
+    @Override
+    public String getExtensionName()
+    {
         return "eps";
     }
-    
-    @Override public Graphics2D getGraphics2D() {
+
+    @Override
+    public Graphics2D getGraphics2D()
+    {
         return graphics2D;
     }
 
-    private void reset() {
+    private void reset()
+    {
         graphics2D = new EpsGraphics2D();
     }
-
-    EpsGraphics2D graphics2D;   
+    
+    EpsGraphics2D graphics2D;
 }
