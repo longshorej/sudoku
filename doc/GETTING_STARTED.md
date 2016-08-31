@@ -1,5 +1,10 @@
-IDE Setup
-=========
+Project Setup
+=============
+
+Install SBT and execute sbt command "run"
+
+IDE Setup (Obsolete)
+====================
 
 This project contains a copy of all of the source code and library files
 required to compile and execute it. However, in an attempt to remain IDE
@@ -41,6 +46,6 @@ the following procedure to create a new project with the existing sources.
 5.
   Run Project (Green Triangle)
 
-  Select constraint_puzzle_gui.SudokuApplication as main class
+  Select info.longshore.sudoku.gui.SudokuApplication as main class
 
-  [OK]  
+  [OK]
