@@ -1,13 +1,4 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * PublishingProfilePanel.java
- *
- * Created on May 11, 2009, 7:32:35 PM
-
 package info.longshore.sudoku.gui;
 
 import info.longshore.sudoku.domain.*;
@@ -15,10 +6,6 @@ import org.jdesktop.application.Action;
 
 
 
-/**
- *
- * @author rm108s04
- *
 public class PublishingProfilePanel extends javax.swing.JPanel {
 
     public PublishingProfilePanel(PublishingProfile p) {
